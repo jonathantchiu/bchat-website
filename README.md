@@ -1,6 +1,6 @@
 # BChat website
 
-The public website for [BChat](https://bchat-five.vercel.app), the group chat app for UCLA classes: landing page, Privacy Policy and Terms of Service.
+The public website for [BChat](https://bchatucla.com), the group chat app for UCLA classes: landing page, Privacy Policy and Terms of Service.
 
 Plain HTML and CSS, no build step. **Every merge to `main` deploys automatically** to Vercel, and every pull request gets its own preview link.
 
