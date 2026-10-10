@@ -17,7 +17,7 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -26,234 +26,208 @@
   <header class="site-header">
     <nav class="container nav" aria-label="Main">
       <a class="brand" href="./">
-        <img src="assets/logo.png" alt="" width="38" height="41">
+        <img src="assets/logo.png" alt="" width="32" height="35">
         BChat
       </a>
       <ul class="nav-links">
         <li><a href="#features">Features</a></li>
-        <li><a href="#how">How it works</a></li>
         <li><a href="#safety">Safety</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
-      <a class="btn btn-primary btn-small" href="#get">Get BChat</a>
+      <div class="nav-actions">
+        <a class="btn btn-outline btn-small hide-sm" href="mailto:bchatdevx@gmail.com">Contact</a>
+        <a class="btn btn-primary btn-small" href="#get">Get early access</a>
+      </div>
     </nav>
   </header>
 
   <main id="main">
     <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-inner">
-        <div>
-          <span class="eyebrow">Made by UCLA students, for UCLA students</span>
-          <h1 id="hero-title">Every UCLA class. <span class="accent">Instantly connected.</span></h1>
-          <p class="lead">Add your courses and BChat drops you into a group chat with everyone in each class. No hunting for GroupMe links, no Discord servers full of bots.</p>
-          <div class="hero-ctas">
-            <a class="btn btn-primary" href="#get">
-              <span class="store-badge"><small>Coming soon</small>to iPhone</span>
-            </a>
-            <a class="btn btn-ghost" href="#how">See how it works</a>
-          </div>
-          <p class="hero-note">Free for UCLA students. Sign in with your UCLA Google account.</p>
+      <div class="hero-card">
+        <div class="hero-copy">
+          <h1 id="hero-title">Every UCLA class. Instantly connected.</h1>
+          <p>Add your courses and you're in a group chat with everyone in each class.</p>
+          <a class="btn btn-light" href="#get">Get early access</a>
+          <p class="hero-note">Free for UCLA students &middot; Coming soon to iPhone</p>
         </div>
 
-        <div class="phone-stage">
-          <div class="float blue float-1" aria-hidden="true">Hey, are you in CS 35L?</div>
-          <div class="float orange float-2" aria-hidden="true">Study group tonight? 📚</div>
-          <div class="float blue float-3" aria-hidden="true">Joined 5 class chats ✨</div>
-
+        <div class="hero-media">
           <div class="phone" role="img" aria-label="BChat class chat for COM SCI 35L with classmates trading homework tips">
             <div class="screen" aria-hidden="true">
               <div class="app-header">
-                <span class="back">←</span>
-                <span class="title">COM SCI 35L — Software Construction</span>
-                <span class="dots">•••</span>
+                <span class="back">‹</span>
+                <div class="app-title"><strong>COM SCI 35L</strong><small>Software Construction · 214 members</small></div>
               </div>
               <div class="messages">
                 <span class="day">Today</span>
-                <div>
-                  <div class="who">Maya</div>
-                  <div class="msg">
-                    <span class="avatar" style="background:#748ED0">M</span>
-                    <div class="bubble">anyone else stuck on the git rebase part of hw 3? 😭</div>
-                  </div>
+                <div class="msg">
+                  <span class="avatar" style="background:#748ED0">M</span>
+                  <div><div class="who">Maya</div><div class="bubble">anyone else stuck on the git rebase part of hw 3? 😭</div></div>
                 </div>
                 <div class="msg me">
                   <div class="bubble">same lol. TA said office hours are at 4 in Boelter</div>
                 </div>
-                <div>
-                  <div class="who">Alex</div>
-                  <div class="msg">
-                    <span class="avatar" style="background:#FE7A45">A</span>
-                    <div>
-                      <div class="bubble">lifesaver 🙏</div>
-                      <span class="reaction">❤️ 3</span>
-                    </div>
-                  </div>
+                <div class="msg">
+                  <span class="avatar" style="background:#FE7A45">A</span>
+                  <div><div class="who">Alex</div><div class="bubble">lifesaver 🙏</div><span class="reaction">❤️ 3</span></div>
                 </div>
                 <div class="msg me">
                   <div class="bubble">study group at Powell after? 👀</div>
                 </div>
-                <div>
-                  <div class="who">Jordan</div>
-                  <div class="msg">
-                    <span class="avatar" style="background:#5B8FE0">J</span>
-                    <div class="bubble">down, saving a table</div>
-                  </div>
+                <div class="msg">
+                  <span class="avatar" style="background:#5B8FE0">J</span>
+                  <div><div class="who">Jordan</div><div class="bubble">down, saving a table</div></div>
                 </div>
               </div>
-              <div class="typing">Maya is typing…</div>
               <div class="composer">
                 <span class="plus">+</span>
-                <span class="field">Type a message...</span>
-                <span class="send">➤</span>
+                <span class="field">Message COM SCI 35L</span>
+                <span class="send">↑</span>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- The problem, told as a chat -->
-    <section aria-labelledby="why-title">
-      <div class="container">
-        <div class="section-head">
-          <h2 id="why-title">Finding your classmates shouldn't be a side quest</h2>
-        </div>
-        <div class="convo">
-          <p class="line them">UCLA students mostly use 3rd party platforms to connect with classmates.</p>
-          <p class="line us">What are some of these student messaging apps?</p>
-          <p class="line them">Well, there's GroupMe and Discord, but they both kinda suck.</p>
-          <p class="line us">Yeah, there's always bots for some reason… 🤖</p>
-          <p class="line them">So we made BChat: one chat per class, only real UCLA students.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features -->
-    <section class="features" id="features" aria-labelledby="features-title">
-      <div class="container">
-        <div class="section-head">
-          <h2 id="features-title">Everything your class chat needs</h2>
-          <p>Built around how UCLA students actually use group chats.</p>
-        </div>
-        <div class="grid">
-          <article class="card">
-            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 20h5v-2a3 3 0 0 0-5.36-1.86M17 20H7m10 0v-2c0-.66-.13-1.28-.36-1.86M7 20H2v-2a3 3 0 0 1 5.36-1.86M7 20v-2c0-.66.13-1.28.36-1.86m0 0a5 5 0 0 1 9.28 0M15 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm6 3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM7 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/></svg></div>
-            <h3>Auto-joined class chats</h3>
-            <p>Pick your courses from the UCLA Schedule of Classes and you're instantly in a chat with everyone else taking them.</p>
-          </article>
-          <article class="card">
-            <div class="icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-5l-5 5v-5z"/></svg></div>
-            <h3>Real-time messaging</h3>
-            <p>Replies, emoji reactions, typing indicators, and photo and video sharing, all live.</p>
-          </article>
-          <article class="card">
-            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15v2m-6 4h12a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2zm10-10V7a4 4 0 0 0-8 0v4h8z"/></svg></div>
-            <h3>UCLA students only</h3>
-            <p>Sign in with your UCLA Google account. Everyone in your chats is a verified UCLA student, not a bot.</p>
-          </article>
-          <article class="card">
-            <div class="icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4m5.62-4.02A11.96 11.96 0 0 1 12 2.94a11.96 11.96 0 0 1-8.62 3.04A12 12 0 0 0 3 9c0 5.59 3.82 10.29 9 11.62 5.18-1.33 9-6.03 9-11.62 0-1.04-.13-2.05-.38-3.02z"/></svg></div>
-            <h3>Safety built in</h3>
-            <p>Block anyone, report messages in two taps, and a moderation team that acts on reports within 24 hours.</p>
-          </article>
-          <article class="card">
-            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14M5 8a2 2 0 1 1 0-4h14a2 2 0 1 1 0 4M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8m-9 4h4"/></svg></div>
-            <h3>Archive finished classes</h3>
-            <p>Quarter's over? Archive old class chats to keep your list clean without losing anything.</p>
-          </article>
-          <article class="card">
-            <div class="icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.35 15.35A9 9 0 0 1 8.65 3.65 9 9 0 1 0 20.35 15.35z"/></svg></div>
-            <h3>Light and dark mode</h3>
-            <p>Warm and easy on the eyes during the day, cozy for late-night problem sets.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- How it works -->
-    <section id="how" aria-labelledby="how-title">
-      <div class="container">
-        <div class="section-head">
-          <h2 id="how-title">Up and running in a minute</h2>
-          <p>Three steps between you and your classmates.</p>
-        </div>
-        <div class="steps">
-          <div class="step">
-            <h3>Sign in with UCLA</h3>
-            <p>Use your @g.ucla.edu Google account, the Google version of your @ucla.edu email. No new password to remember.</p>
+          <div class="card-float classes-card" aria-hidden="true">
+            <div class="cf-head">Your classes</div>
+            <div class="cf-row"><span class="tag" style="background:#FE7A45">CS</span><span><b>COM SCI 35L</b><small>Jordan: down, saving a table</small></span><span class="badge">4</span></div>
+            <div class="cf-row"><span class="tag" style="background:#177BBD">MA</span><span><b>MATH 31B</b><small>Priya: is the midterm cumulative?</small></span><span class="badge">12</span></div>
+            <div class="cf-row"><span class="tag" style="background:#748ED0">LS</span><span><b>LIFESCI 7A</b><small>Sam: lab notes 📎</small></span></div>
           </div>
-          <div class="step">
-            <h3>Add your classes</h3>
-            <p>Search by course, like "CS 35L" or "MATH 31B". BChat knows thousands of UCLA courses each quarter.</p>
-          </div>
-          <div class="step">
-            <h3>Start chatting</h3>
-            <p>You're in a group chat for every class. Ask about homework, find study partners, share notes.</p>
+
+          <div class="card-float typing-card" aria-hidden="true">
+            <span class="dots"><i></i><i></i><i></i></span> Maya is typing
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Screens -->
-    <section class="screens" aria-labelledby="screens-title">
+    <!-- Statement -->
+    <section class="statement" aria-labelledby="why-title">
       <div class="container">
-        <div class="section-head">
-          <h2 id="screens-title">A closer look</h2>
-          <p>Straight from the app.</p>
+        <span class="label">Why we built BChat</span>
+        <h2 id="why-title">GroupMe links get lost and Discord servers fill up with bots. BChat gives every UCLA class <span class="hl">one chat</span>, with only real UCLA students in it.</h2>
+      </div>
+    </section>
+
+    <!-- Feature rows -->
+    <section class="row" id="features" aria-labelledby="f1-title">
+      <div class="container row-inner">
+        <div class="row-copy">
+          <span class="label">Classes</span>
+          <h2 id="f1-title">Every class, already a chat</h2>
+          <p>Search for your courses, like "CS 35L" or "MATH 31B", and you're in a chat with everyone else taking them. BChat knows thousands of UCLA courses each quarter.</p>
+          <a class="more" href="#faq">How it works <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
         </div>
-        <div class="gallery">
-          <figure>
-            <div class="phone"><div class="screen"><img src="assets/screens/welcome.jpg" alt="BChat sign-in screen: Sign in with your UCLA Google account" loading="lazy" width="620" height="1348"></div></div>
-            <figcaption>Sign in<span>One tap with your UCLA account</span></figcaption>
-          </figure>
-          <figure>
-            <div class="phone"><div class="screen"><img src="assets/screens/rules.jpg" alt="BChat community rules: class chats are visible to classmates, zero tolerance for harassment, no exam answers, report anything" loading="lazy" width="620" height="1348"></div></div>
-            <figcaption>Community rules<span>Clear expectations from day one</span></figcaption>
-          </figure>
-          <figure>
-            <div class="phone"><div class="screen"><img src="assets/screens/settings.jpg" alt="BChat settings: appearance, notifications, and privacy and safety options" loading="lazy" width="620" height="1348"></div></div>
-            <figcaption>Your settings<span>Notifications, themes, blocking</span></figcaption>
-          </figure>
+        <div class="row-media">
+          <div class="phone" role="img" aria-label="BChat class list showing chats for COM SCI 35L, MATH 31B, LIFESCI 7A, CHEM 14A and PSYCH 10">
+            <div class="screen" aria-hidden="true">
+              <div class="list-header">
+                <strong>Classes</strong>
+                <span class="search">Search courses</span>
+              </div>
+              <ul class="chat-list">
+                <li><span class="tag" style="background:#FE7A45">CS</span><span><b>COM SCI 35L</b><small>Jordan: down, saving a table</small></span><span class="meta"><time>4:13</time><span class="badge">4</span></span></li>
+                <li><span class="tag" style="background:#177BBD">MA</span><span><b>MATH 31B</b><small>Priya: is the midterm cumulative?</small></span><span class="meta"><time>3:58</time><span class="badge">12</span></span></li>
+                <li><span class="tag" style="background:#748ED0">LS</span><span><b>LIFESCI 7A</b><small>Sam: lab notes 📎</small></span><span class="meta"><time>2:30</time></span></li>
+                <li><span class="tag" style="background:#D9612E">CH</span><span><b>CHEM 14A</b><small>You: thanks!!</small></span><span class="meta"><time>Mon</time></span></li>
+                <li><span class="tag" style="background:#5B8FE0">PS</span><span><b>PSYCH 10</b><small>Leo: anyone have the slides?</small></span><span class="meta"><time>Sun</time></span></li>
+              </ul>
+              <div class="tabbar"><span class="on">Classes</span><span>Profile</span><span>Settings</span></div>
+            </div>
+          </div>
+          <div class="card-float search-card" aria-hidden="true">
+            <div class="sc-input">MATH 31<span class="caret"></span></div>
+            <div class="sc-row"><span><b>MATH 31A</b><small>Differential and Integral Calculus</small></span><span class="join">Join</span></div>
+            <div class="sc-row"><span><b>MATH 31B</b><small>Integration and Infinite Series</small></span><span class="joined">Joined</span></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Safety -->
-    <section class="safety" id="safety" aria-labelledby="safety-title">
-      <div class="container safety-inner">
-        <div>
-          <h2 id="safety-title">A class chat you can actually trust</h2>
-          <p class="lead">BChat has zero tolerance for harassment, hate, and spam, and it's built so you never have to just put up with it.</p>
-          <ul class="checklist">
-            <li><span class="tick">✓</span><span><strong>Verified UCLA students only.</strong> Every account is a UCLA Google account.</span></li>
-            <li><span class="tick">✓</span><span><strong>Report and block in two taps.</strong> Tap someone's name or long-press any message.</span></li>
-            <li><span class="tick">✓</span><span><strong>Reports reviewed within 24 hours.</strong> Offenders are warned, muted, or banned.</span></li>
-            <li><span class="tick">✓</span><span><strong>No ads, no selling your data.</strong> Delete your account anytime from Settings.</span></li>
-          </ul>
+    <section class="row flip tint" aria-labelledby="f2-title">
+      <div class="container row-inner">
+        <div class="row-copy">
+          <span class="label">Messaging</span>
+          <h2 id="f2-title">Talk the way you already do</h2>
+          <p>Replies, emoji reactions, typing indicators, and photo and video sharing, all live. Light and dark mode, and archive a class when the quarter ends.</p>
         </div>
-        <div class="convo" aria-hidden="true">
-          <p class="line them">Someone in my class chat is being weird 😬</p>
-          <p class="line us">Tap their name → Block. Then hit Report so the team can take a look.</p>
-          <p class="line them">Done. Way easier than Discord lol</p>
+        <div class="row-media">
+          <div class="phone" role="img" aria-label="BChat chat for MATH 31B showing a reply and emoji reactions">
+            <div class="screen" aria-hidden="true">
+              <div class="app-header">
+                <span class="back">‹</span>
+                <div class="app-title"><strong>MATH 31B</strong><small>Integration and Infinite Series</small></div>
+              </div>
+              <div class="messages">
+                <span class="day">Today</span>
+                <div class="msg">
+                  <span class="avatar" style="background:#177BBD">P</span>
+                  <div><div class="who">Priya</div><div class="bubble">is the midterm cumulative?</div></div>
+                </div>
+                <div class="msg">
+                  <span class="avatar" style="background:#D9612E">L</span>
+                  <div><div class="who">Leo</div><div class="bubble"><span class="quote"><b>Priya</b>is the midterm cumulative?</span>prof said ch 7 and 8 only</div><span class="reaction">🙏 6 · 😮 2</span></div>
+                </div>
+                <div class="msg me">
+                  <div class="bubble">ok that's way less bad</div>
+                </div>
+                <div class="msg me">
+                  <div class="bubble">anyone want to do practice problems sunday?</div>
+                </div>
+                <div class="msg">
+                  <span class="avatar" style="background:#748ED0">M</span>
+                  <div><div class="who">Maya</div><div class="bubble">yes pls</div></div>
+                </div>
+              </div>
+              <div class="composer">
+                <span class="plus">+</span>
+                <span class="field">Message MATH 31B</span>
+                <span class="send">↑</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-float react-card" aria-hidden="true">❤️ 😂 🙏 😮 😭 👍</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row dark" id="safety" aria-labelledby="f3-title">
+      <div class="container row-inner">
+        <div class="row-copy">
+          <span class="label">Safety</span>
+          <h2 id="f3-title">Only real Bruins</h2>
+          <p>Every account is a UCLA Google account. Block or report anyone in two taps, and reports are reviewed within 24 hours. No ads, and we never sell your data.</p>
+          <a class="more" href="privacy.html">Privacy Policy <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="row-media">
+          <div class="phone"><div class="screen"><img src="assets/screens/rules.jpg" alt="BChat community rules: class chats are visible to classmates, zero tolerance for harassment, no exam answers, report anything" loading="lazy" width="620" height="1348"></div></div>
+          <div class="card-float sheet-card" aria-hidden="true">
+            <span>Reply</span>
+            <span>Copy</span>
+            <span class="danger">Report message</span>
+            <span class="danger">Block user</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="features" id="faq" aria-labelledby="faq-title">
-      <div class="container">
-        <div class="section-head">
-          <h2 id="faq-title">Questions, answered</h2>
-        </div>
+    <section class="faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container narrow">
+        <h2 id="faq-title">Questions, answered</h2>
         <div class="faq">
+          <details>
+            <summary>How does it work?</summary>
+            <p>Sign in with your @g.ucla.edu Google account (the Google version of your @ucla.edu email), add your classes, and you're in a group chat for each one. No new password to remember.</p>
+          </details>
           <details>
             <summary>Is BChat an official UCLA app?</summary>
             <p>No. BChat is an independent project built by UCLA students. It isn't affiliated with, sponsored by, or endorsed by UCLA.</p>
           </details>
           <details>
             <summary>Who can join?</summary>
-            <p>Current UCLA students, signing in with their @g.ucla.edu Google account (the Google version of your @ucla.edu email). If you're under 18, you need a parent or guardian's permission.</p>
+            <p>Current UCLA students, signing in with their @g.ucla.edu Google account. If you're under 18, you need a parent or guardian's permission.</p>
           </details>
           <details>
             <summary>Is it free?</summary>
@@ -275,23 +249,24 @@
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta" id="get" aria-labelledby="get-title">
-      <div class="container">
-        <div class="panel">
-          <img src="assets/logo.png" alt="BChat logo" width="96" height="104">
+    <!-- CTA, rounds into the footer -->
+    <div class="cta-wrap">
+      <section class="cta" id="get" aria-labelledby="get-title">
+        <div class="container cta-inner">
           <h2 id="get-title">Your classmates are waiting</h2>
-          <p>BChat is coming soon to iPhone. Want early access? Get in touch.</p>
-          <a class="btn btn-primary" href="mailto:bchatdevx@gmail.com?subject=BChat%20early%20access">Request early access</a>
+          <div>
+            <p>BChat is coming soon to iPhone. Want early access? Get in touch.</p>
+            <a class="btn btn-dark" href="mailto:bchatdevx@gmail.com?subject=BChat%20early%20access">Request early access</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
       <div class="footer-inner">
-        <a class="brand" href="./"><img src="assets/logo.png" alt="" width="38" height="41">BChat</a>
+        <a class="brand" href="./"><img src="assets/logo.png" alt="" width="32" height="35">BChat</a>
         <ul class="footer-links">
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="terms.html">Terms of Service</a></li>
